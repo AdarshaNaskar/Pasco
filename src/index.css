@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+
+  --color-cream-50: #FFF8F2;
+  --color-cream-100: #F9EFE6;
+  --color-cream-200: #E8DCCF;
+
+  --color-forest-900: #0E2F24;
+  --color-forest-800: #143D30;
+  --color-forest-700: #1B4D3E;
+  --color-forest-600: #266351;
+  --color-forest-500: #347A65;
+  --color-forest-100: #E6F0EB;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: #1A1A1A;
+    background-color: #F2EFE7;
+  }
+
+  button,
+  a,
+  [role="button"],
+  input[type="button"],
+  input[type="submit"] {
+    cursor: pointer;
+  }
+}

@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Dev artifacts
+stats.html
+.agents
+.env*
+!.env.example
+

@@ -3,7 +3,6 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 // Import images directly from src/assets folder
-import curryPastesImg from "../assets/circle-Hot-Curry-Paste.webp";
 import cookingSaucesImg from "../assets/circle-Punjabi-Butter-Chicken-Sauce.webp";
 import marinadesImg from "../assets/circle-Tandoori-Paste-Paste.webp";
 import chutneysImg from "../assets/circle-Hot-Mango-Chutney.webp";

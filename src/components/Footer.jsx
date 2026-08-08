@@ -1,4 +1,3 @@
-import React from "react";
 import EmbroideryMandala from "./EmbroideryMandala";
 
 const sisterBrands = [

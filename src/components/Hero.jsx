@@ -1,19 +1,8 @@
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import EmbroideryMandala from "./EmbroideryMandala";
 
 export default function Hero() {
-  const [startRotation, setStartRotation] = useState(false);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setStartRotation(true);
-    }, 1800);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
     <section id="hero" className="relative min-h-[100svh] w-full flex flex-col justify-between pt-24 pb-8 lg:pt-28 lg:pb-16 bg-[#F2EFE7] overflow-hidden select-none scroll-mt-20">
       {/* 1. Subtle Line-Art Botanical Drawings & Decorative Embroidery Background Motif */}

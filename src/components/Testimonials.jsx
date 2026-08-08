@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from "react";
 import { LazyMotion, domAnimation, m } from "framer-motion";
 import { Star } from "lucide-react";
 

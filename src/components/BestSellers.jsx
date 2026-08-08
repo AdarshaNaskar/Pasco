@@ -3,45 +3,45 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 // Import images directly from src/assets folder
-import curryPastesImg from "../assets/curry-pastes.webp";
-import cookingSaucesImg from "../assets/cooking-sauces.webp";
-import marinadesImg from "../assets/marinades.webp";
-import chutneysImg from "../assets/chutneys.webp";
-import picklesImg from "../assets/pickles.webp";
-import bundlesImg from "../assets/bundles.webp";
+import curryPastesImg from "../assets/circle-Hot-Curry-Paste.webp";
+import cookingSaucesImg from "../assets/circle-Punjabi-Butter-Chicken-Sauce.webp";
+import marinadesImg from "../assets/circle-Tandoori-Paste-Paste.webp";
+import chutneysImg from "../assets/circle-Hot-Mango-Chutney.webp";
+import picklesImg from "../assets/circle-Hot-Mango-Pickle.webp";
+import bundlesImg from "../assets/Pasco-BBQ-Bundle.webp";
 
 const products = [
   {
     id: "tikka-masala",
-    name: "Tikka Masala Paste",
-    price: "£4.99",
+    name: "Mango Pickle",
+    price: "£1.89",
     tag: "BEST SELLER",
-    image: curryPastesImg,
-    alt: "Pasco Tikka Masala Curry Paste",
+    image: picklesImg,
+    alt: "Pasco Mango Pickle",
   },
   {
     id: "butter-chicken",
     name: "Butter Chicken Sauce",
-    price: "£5.49",
+    price: "£1.69",
     tag: "BEST SELLER",
     image: cookingSaucesImg,
     alt: "Pasco Butter Chicken Cooking Sauce",
   },
   {
     id: "tandoori-marinade",
-    name: "Tandoori Grill Marinade",
-    price: "£4.79",
+    name: "Tandoori Marinade",
+    price: "£1.89",
     tag: "NEW",
     image: marinadesImg,
     alt: "Pasco Tandoori Grill Marinade",
   },
   {
     id: "mango-chutney",
-    name: "Sweet Mango Chutney",
-    price: "£3.99",
+    name: "Hot Mango Chutney",
+    price: "£1.89",
     tag: "BEST SELLER",
     image: chutneysImg,
-    alt: "Pasco Sweet Mango Chutney",
+    alt: "Pasco Hot Mango Chutney",
   },
   {
     id: "spicy-lime-pickle",
@@ -101,7 +101,9 @@ export default function BestSellers() {
 
   return (
     <LazyMotion features={domAnimation}>
-      <section className="relative bg-white py-16 md:py-[120px] px-6 md:px-[48px] overflow-hidden select-none">
+      <section id="sauces" className="relative bg-white py-16 md:py-[120px] px-6 md:px-[48px] overflow-hidden select-none scroll-mt-20">
+        <div id="best-sellers" className="absolute -top-20 left-0" />
+        <div id="bundles" className="absolute -top-20 left-0" />
       
       {/* SECTION HEADER CONTAINER */}
       <div className="max-w-[1440px] mx-auto mb-[60px] md:mb-[80px]">

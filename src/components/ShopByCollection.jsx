@@ -2,12 +2,12 @@ import { LazyMotion, domAnimation, m } from "framer-motion";
 import EmbroideryMandala from "./EmbroideryMandala";
 
 // Import images directly from src/assets folder
-import curryPastesImg from "../assets/curry-pastes.webp";
-import cookingSaucesImg from "../assets/cooking-sauces.webp"; 
-import marinadesImg from "../assets/marinades.webp";
-import chutneysImg from "../assets/chutneys.webp";
-import picklesImg from "../assets/pickles.webp";
-import bundlesImg from "../assets/bundles.webp";
+import curryPastesImg from "../assets/circle-Hot-Curry-Paste.webp";
+import cookingSaucesImg from "../assets/circle-Punjabi-Butter-Chicken-Sauce.webp"; 
+import marinadesImg from "../assets/circle-Tandoori-Paste-Paste.webp";
+import chutneysImg from "../assets/circle-Hot-Mango-Chutney.webp";
+import picklesImg from "../assets/circle-Hot-Mango-Pickle.webp";
+import bundlesImg from "../assets/Pasco-BBQ-Bundle.webp";
 
 export default function ShopByCollection() {
   return (
@@ -74,12 +74,12 @@ export default function ShopByCollection() {
           }}
         >
 
-          {/* 1. CURRY PASTES — FEATURE CARD (Spans 2 cols x 2 rows on desktop) */}
+          {/* 1. PICKLE — FEATURE CARD (Spans 2 cols x 2 rows on desktop) */}
           <div
             className="group lg:col-span-2 lg:row-span-2 md:col-span-2 h-full"
           >
             <a
-              href="#curry-pastes"
+              href="#pickles"
               className="block bg-white border border-[#E6DED2] rounded-[28px] h-full min-h-[420px] lg:min-h-[615px] p-6 lg:p-10 flex flex-col justify-between items-center text-center transition-all duration-[450ms] ease-[cubic-bezier(0.25,1,0.5,1)] group-hover:-translate-y-2 group-hover:scale-[1.015] group-hover:border-[#8B004A] group-hover:shadow-xl cursor-pointer overflow-hidden select-none relative"
             >
               {/* Feature Badge */}
@@ -92,7 +92,7 @@ export default function ShopByCollection() {
               {/* Large Product Image Container */}
               <div className="w-full flex-1 flex items-center justify-center relative overflow-hidden pt-12 pb-2 px-4">
                 <img
-                  src={curryPastesImg}
+                  src={picklesImg}
                   alt="Pasco Curry Pastes Signature Collection"
                   width={414}
                   height={414}
@@ -175,7 +175,7 @@ export default function ShopByCollection() {
             >
               <div className="w-full h-[62%] flex items-center justify-center relative overflow-hidden p-2">
                 <img
-                  src={marinadesImg}
+                  src={cookingSaucesImg}
                   alt="Pasco Marinades Collection"
                   width={320}
                   height={320}
@@ -257,7 +257,7 @@ export default function ShopByCollection() {
             >
               <div className="w-full h-[62%] flex items-center justify-center relative overflow-hidden p-2">
                 <img
-                  src={picklesImg}
+                  src={curryPastesImg}
                   alt="Pasco Pickles Collection"
                   width={320}
                   height={320}

@@ -11,7 +11,7 @@ const sisterBrands = [
 
 export default function Footer() {
   return (
-    <footer className="relative bg-[#F2EFE8] text-[#1F1F1F] pt-12 md:pt-[90px] pb-10 px-6 md:px-[48px] overflow-hidden select-none border-t border-black/[0.06]">
+    <footer id="contact" className="relative bg-[#F2EFE8] text-[#1F1F1F] pt-12 md:pt-[90px] pb-10 px-6 md:px-[48px] overflow-hidden select-none border-t border-black/[0.06] scroll-mt-20">
       
       {/* Static Decorative Bottom-Right Embroidery Accent (4% Opacity, Non-Rotating) */}
       <div className="absolute -bottom-36 -right-28 pointer-events-none z-0 opacity-[0.04] scale-150">

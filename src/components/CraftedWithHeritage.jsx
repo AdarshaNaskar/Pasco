@@ -5,7 +5,7 @@ import EmbroideryMandala from "./EmbroideryMandala";
 
 // Import story assets
 import heritageCookingImg from "../assets/heritage-cooking.webp";
-import bundlesImg from "../assets/bundles.webp";
+import bundlesImg from "../assets/Pasco-BBQ-Bundle.webp";
 
 const stories = [
   {
@@ -78,7 +78,9 @@ export default function CraftedWithHeritage() {
 
   return (
     <LazyMotion features={domAnimation}>
-      <section className="relative bg-white py-16 md:py-[140px] px-6 md:px-[48px] overflow-hidden select-none">
+      <section id="story" className="relative bg-white py-16 md:py-[140px] px-6 md:px-[48px] overflow-hidden select-none scroll-mt-20">
+        <div id="heritage" className="absolute -top-20 left-0" />
+        <div id="about" className="absolute -top-20 left-0" />
       
       {/* 1. SECTION HEADER */}
       <div className="max-w-[1600px] mx-auto text-center flex flex-col items-center z-10 mb-12 lg:mb-16">

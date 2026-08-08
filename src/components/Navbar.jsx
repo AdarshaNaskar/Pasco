@@ -186,7 +186,7 @@ export default function Navbar() {
           <aside className="fixed top-0 right-0 bottom-0 w-[280px] bg-[#FFF8F2] shadow-2xl p-6 flex flex-col justify-between z-50 border-l border-[#E8DCCF]">
             <div>
               <div className="flex items-center justify-between pb-6 border-b border-[#E8DCCF]">
-                <img src="/pasco-logo.webp" alt="Pasco Foods" width={100} height={37} className="h-[37px] w-auto" />
+                <img src="Pasco-Logo (1).webp" alt="Pasco Foods" width={200} height={100} className="h-[80px] w-auto" />
                 <button type="button" onClick={() => setIsMobileMenuOpen(false)}>
                   <X className="w-5 h-5 text-[#33312E]" />
                 </button>

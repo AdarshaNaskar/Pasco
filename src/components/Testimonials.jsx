@@ -80,7 +80,8 @@ export default function Testimonials() {
 
   return (
     <LazyMotion features={domAnimation}>
-      <section className="relative bg-[#F2EFE8] py-16 md:py-[120px] overflow-hidden select-none">
+      <section id="reviews" className="relative bg-[#F2EFE8] py-16 md:py-[120px] overflow-hidden select-none scroll-mt-20">
+        <div id="testimonials" className="absolute -top-20 left-0" />
       
       {/* Inline Keyframes for 100% Native CSS Marquee (Native animation-play-state pause control) */}
       <style>{`

@@ -50,7 +50,8 @@ const itemVariants = {
 export default function TrustBar() {
   return (
     <LazyMotion features={domAnimation}>
-      <section className="relative bg-[#FFFFFF] py-8 md:py-12 px-6 md:px-[48px] overflow-hidden select-none">
+      <section id="trust" className="relative bg-[#FFFFFF] py-8 md:py-12 px-6 md:px-[48px] overflow-hidden select-none scroll-mt-20">
+        <div id="quality" className="absolute -top-20 left-0" />
         <div className="max-w-[1440px] mx-auto z-10 relative">
           <m.div
             className="relative bg-[#8B004A] rounded-[24px] py-10 px-8 md:px-12 shadow-xl shadow-[#8B004A]/10 overflow-hidden"

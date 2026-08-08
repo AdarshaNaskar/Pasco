@@ -15,7 +15,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-fit md:min-h-screen flex flex-col justify-between pt-24 pb-[40px] lg:pt-28 lg:pb-16 bg-[#F2EFE7] overflow-hidden select-none">
+    <section className="relative min-h-[100svh] w-full flex flex-col justify-between pt-24 pb-8 lg:pt-28 lg:pb-16 bg-[#F2EFE7] overflow-hidden select-none">
       {/* 1. Subtle Line-Art Botanical Drawings & Decorative Embroidery Background Motif */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-25">
         {/* Left Botanical Floral Line Art (Mobile: Lower-Left Edge | Desktop: top-1/4 -left-12) */}

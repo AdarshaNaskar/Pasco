@@ -12,7 +12,7 @@ import bundlesImg from "../assets/bundles.webp";
 export default function ShopByCollection() {
   return (
     <LazyMotion features={domAnimation}>
-      <section id="collections" className="relative bg-[#F2EFE8] py-16 md:py-[120px] px-6 md:px-[48px] overflow-hidden scroll-mt-20">
+      <section id="collections" className="relative bg-[#F2EFE8] pt-[60px] pb-16 md:py-[120px] px-6 md:px-[48px] overflow-hidden scroll-mt-20">
       <div id="products" className="absolute -top-20 left-0" />
       
       {/* SECTION HEADER CONTAINER */}

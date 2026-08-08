@@ -17,7 +17,7 @@ export default function Hero() {
     return () => clearTimeout(timer);
   }, []);
   return (
-    <section className="relative min-h-screen flex flex-col justify-between pt-24 pb-12 lg:pt-28 lg:pb-16 bg-[#F2EFE7] overflow-hidden select-none">
+    <section className="relative min-h-fit md:min-h-screen flex flex-col justify-between pt-24 pb-[40px] lg:pt-28 lg:pb-16 bg-[#F2EFE7] overflow-hidden select-none">
       {/* 1. Subtle Line-Art Botanical Drawings & Decorative Embroidery Background Motif */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-25">
         {/* Left Botanical Floral Line Art */}
@@ -49,7 +49,7 @@ export default function Hero() {
       </div>
 
       {/* 2. Main Hero Content Container */}
-      <div className="max-w-[1720px] mx-auto px-6 md:px-10 w-full my-auto z-10 flex flex-col justify-center min-h-[75vh]">
+      <div className="max-w-[1720px] mx-auto px-6 md:px-10 w-full my-4 md:my-auto z-10 flex flex-col justify-center md:min-h-[75vh]">
         <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
           
           {/* LEFT OVERLAY TEXT */}
@@ -83,7 +83,7 @@ export default function Hero() {
               </div>
 
               {/* STAGE 2: Whole Jars Lineup Image (Appears with faster initial speed from center) */}
-              <div className="relative z-10 w-full flex flex-col items-center justify-center translate-y-[50px]">
+              <div className="relative z-10 w-full flex flex-col items-center justify-center translate-y-2 md:translate-y-[50px]">
                 <motion.img
                   src="/pasco-hero.webp"
                   alt="Pasco Authentic Indian Marinade and Curry Pastes Range"
@@ -138,7 +138,7 @@ export default function Hero() {
       </div>
 
       {/* Bottom Subtle Tagline */}
-      <div className="text-center z-10 opacity-40 text-xs font-light tracking-widest text-[#524E48] uppercase">
+      <div className="text-center z-10 opacity-40 text-xs font-light tracking-widest text-[#524E48] uppercase mt-3 md:mt-8">
         PASCO FOODS — EST. 1994
       </div>
     </section>

@@ -82,8 +82,8 @@ export default function Hero() {
           >
             <div className="relative w-full max-w-[1150px] mx-auto flex flex-col items-center justify-center">
               
-              {/* STAGE 1: Golden Embroidery Mandala Artwork */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 transform scale-[0.80] sm:scale-100 lg:scale-125 opacity-[0.15] transition-transform duration-700">
+              {/* STAGE 1: Golden Embroidery Mandala Artwork (50% Larger on Mobile) */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 transform scale-[1.50] sm:scale-110 lg:scale-125 opacity-[0.15] transition-transform duration-700">
                 <EmbroideryMandala
                   size={480}
                   showBadge={false}

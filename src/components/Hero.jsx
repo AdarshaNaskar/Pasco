@@ -147,7 +147,7 @@ export default function Hero() {
 
       {/* Bottom Subtle Tagline */}
       <div className="text-center z-10 opacity-40 text-xs font-light tracking-widest text-[#524E48] uppercase mt-3 md:mt-8">
-        PASCO FOODS — EST. 1994
+        PASCO FOODS — EST. 1990
       </div>
     </section>
   );

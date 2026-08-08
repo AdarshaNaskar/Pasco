@@ -18,7 +18,7 @@ const stories = [
   },
   {
     id: 2,
-    year: "2000 & Beyond",
+    year: "1995 & Beyond",
     subtitle: "100% Natural Sauces & Spice Plantations",
     title: "Pioneering Natural Sauces & India Spice Farms",
     image: bundlesImg,

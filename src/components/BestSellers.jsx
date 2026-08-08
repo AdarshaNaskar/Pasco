@@ -7,7 +7,8 @@ import curryPastesImg from "../assets/circle-Hot-Curry-Paste.webp";
 import cookingSaucesImg from "../assets/circle-Punjabi-Butter-Chicken-Sauce.webp";
 import marinadesImg from "../assets/circle-Tandoori-Paste-Paste.webp";
 import chutneysImg from "../assets/circle-Hot-Mango-Chutney.webp";
-import picklesImg from "../assets/circle-Hot-Mango-Pickle.webp";
+import mangopicklesImg from "../assets/circle-Hot-Mango-Pickle.webp";
+import limepickleImg from "../assets/circle-Hot-Lime-Pickle.webp";
 import bundlesImg from "../assets/Pasco-BBQ-Bundle.webp";
 
 const products = [
@@ -16,7 +17,7 @@ const products = [
     name: "Mango Pickle",
     price: "£1.89",
     tag: "BEST SELLER",
-    image: picklesImg,
+    image: mangopicklesImg,
     alt: "Pasco Mango Pickle",
   },
   {
@@ -46,15 +47,15 @@ const products = [
   {
     id: "spicy-lime-pickle",
     name: "Spicy Lime Pickle",
-    price: "£4.29",
+    price: "£1.89",
     tag: "NEW",
-    image: picklesImg,
+    image: limepickleImg,
     alt: "Pasco Spicy Lime Pickle",
   },
   {
     id: "trio-gift-bundle",
     name: "Artisanal Trio Bundle",
-    price: "£14.99",
+    price: "£5",
     tag: "BEST SELLER",
     image: bundlesImg,
     alt: "Pasco Artisanal Trio Gift Bundle",

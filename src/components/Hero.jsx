@@ -52,7 +52,7 @@ export default function Hero() {
           
           {/* LEFT OVERLAY TEXT */}
           <motion.div
-            className="w-full lg:w-[15%] shrink-0 z-20 flex flex-col justify-center text-left"
+            className="w-full lg:w-[15%] shrink-0 z-20 flex flex-col justify-center text-left -translate-y-[20px] lg:translate-y-0"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
@@ -65,8 +65,8 @@ export default function Hero() {
             {/* Small Brand Highlights & Quality Badges */}
             <div className="flex flex-wrap items-center gap-2 text-[11px] font-sans tracking-wide text-[#666157]">
               <span className="inline-flex items-center gap-1 bg-[#7A1C38]/[0.08] text-[#7A1C38] px-2.5 py-1 rounded-full border border-[#7A1C38]/20 font-semibold uppercase text-[10px]">
-                <span>✦</span> 100% Real Ingredients
-              </span>
+                <span>✦</span> Fresh &amp; Tasty 
+              </span><br />
               <span className="inline-flex items-center gap-1 bg-black/[0.04] text-[#4A463F] px-2.5 py-1 rounded-full border border-black/[0.08] font-medium uppercase text-[10px]">
                 Gluten Free
               </span>
@@ -95,7 +95,7 @@ export default function Hero() {
                 <motion.img
                   src="/pasco-hero.webp"
                   alt="Pasco Authentic Indian Marinade and Curry Pastes Range"
-                  className="w-full h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.18)] filter contrast-[1.02] saturate-[1.02] transform transition-transform duration-500 hover:scale-[1.02] mx-auto origin-center"
+                  className="w-full h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.18)] filter contrast-[1.02] saturate-[1.02] transform transition-transform duration-500 hover:scale-[1.02] mx-auto origin-center scale-[1.30] md:scale-100"
                   width={1150}
                   height={600}
                   loading="eager"
@@ -124,7 +124,7 @@ export default function Hero() {
 
           {/* RIGHT OVERLAY TEXT & CTA */}
           <motion.div
-            className="w-full lg:w-[15%] shrink-0 z-20 flex flex-col justify-center items-start lg:items-start text-left"
+            className="w-full lg:w-[15%] shrink-0 z-20 flex flex-col justify-center items-start lg:items-start text-left translate-y-[15px] lg:translate-y-0"
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}

@@ -177,27 +177,27 @@ export default function Footer() {
         <div className="w-full border-t border-black/[0.06] mb-10" />
 
         {/* 3. FOUR-COLUMN NAVIGATION, CONTACT & ADDRESS GRID */}
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-10 text-center md:text-left">
+        <div className="w-full grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 mb-10 text-center md:text-left items-start">
           
           {/* Column 1: NAVIGATION */}
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-4">
+          <div className="col-span-1 flex flex-col items-center md:items-start">
+            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-3 md:mb-4">
               NAVIGATION
             </h4>
-            <div className="flex flex-col items-center md:items-start space-y-3">
-              <a href="#products" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[16px] font-normal transition-colors duration-300">
+            <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-2.5">
+              <a href="#products" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[15px] sm:text-[16px] font-normal transition-colors duration-300">
                 <span>Products</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
-              <a href="#bundles" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[16px] font-normal transition-colors duration-300">
+              <a href="#bundles" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[15px] sm:text-[16px] font-normal transition-colors duration-300">
                 <span>Bundles</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
-              <a href="#recipes" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[16px] font-normal transition-colors duration-300">
+              <a href="#recipes" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[15px] sm:text-[16px] font-normal transition-colors duration-300">
                 <span>Recipes</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
-              <a href="#contact" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[16px] font-normal transition-colors duration-300">
+              <a href="#contact" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[15px] sm:text-[16px] font-normal transition-colors duration-300">
                 <span>Contact</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
@@ -205,20 +205,20 @@ export default function Footer() {
           </div>
 
           {/* Column 2: COMPANY */}
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-4">
+          <div className="col-span-1 flex flex-col items-center md:items-start">
+            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-3 md:mb-4">
               COMPANY
             </h4>
-            <div className="flex flex-col items-center md:items-start space-y-3">
-              <a href="#about" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[16px] font-normal transition-colors duration-300">
+            <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-2.5">
+              <a href="#about" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[15px] sm:text-[16px] font-normal transition-colors duration-300">
                 <span>About</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
-              <a href="#heritage" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[16px] font-normal transition-colors duration-300">
+              <a href="#heritage" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[15px] sm:text-[16px] font-normal transition-colors duration-300">
                 <span>Heritage</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
-              <a href="#quality" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[16px] font-normal transition-colors duration-300">
+              <a href="#quality" className="relative group text-[#1F1F1F] hover:text-[#8B004A] font-sans text-[15px] sm:text-[16px] font-normal transition-colors duration-300">
                 <span>Quality</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
@@ -226,21 +226,21 @@ export default function Footer() {
           </div>
 
           {/* Column 3: CONTACT */}
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-4">
+          <div className="col-span-1 flex flex-col items-center md:items-start">
+            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-3 md:mb-4">
               CONTACT
             </h4>
-            <div className="flex flex-col items-center md:items-start space-y-3 font-sans text-[16px] text-[#1F1F1F]">
+            <div className="flex flex-col items-center md:items-start space-y-2 md:space-y-2.5 font-sans text-[13px] xs:text-[14px] sm:text-[15px] md:text-[16px] text-[#1F1F1F]">
               <a
                 href="mailto:sales@pascofoods.com"
-                className="relative group hover:text-[#8B004A] transition-colors duration-300"
+                className="relative group hover:text-[#8B004A] transition-colors duration-300 break-all sm:break-normal"
               >
                 <span>sales@pascofoods.com</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
               </a>
               <a
                 href="tel:+441942493220"
-                className="relative group hover:text-[#8B004A] transition-colors duration-300"
+                className="relative group hover:text-[#8B004A] transition-colors duration-300 whitespace-nowrap"
               >
                 <span>+44 1942 493220</span>
                 <span className="absolute left-0 bottom-[-2px] w-0 h-[1.5px] bg-[#8B004A] transition-all duration-300 group-hover:w-full" />
@@ -249,13 +249,13 @@ export default function Footer() {
           </div>
 
           {/* Column 4: ADDRESS */}
-          <div className="flex flex-col items-center md:items-start">
-            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-4">
+          <div className="col-span-1 flex flex-col items-center md:items-start">
+            <h4 className="font-sans text-[13px] tracking-[0.18em] uppercase text-[#8B004A] font-semibold mb-3 md:mb-4">
               ADDRESS
             </h4>
-            <div className="font-sans text-[15px] text-[#6B6762] leading-relaxed font-normal">
-              <p className="font-medium text-[#1F1F1F]">Pasco Foods Limited</p>
-              <p>Pasco House, Makerfield Way</p>
+            <div className="font-sans text-[13px] sm:text-[15px] text-[#6B6762] leading-relaxed font-normal flex flex-col items-center md:items-start text-center md:text-left">
+              <p className="font-medium text-[#1F1F1F]">Pasco Foods Ltd</p>
+              <p>Makerfield Way</p>
               <p>Ince-in-Makerfield</p>
               <p>Wigan WN2 2PR</p>
             </div>

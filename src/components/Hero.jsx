@@ -20,9 +20,9 @@ export default function Hero() {
     <section className="relative min-h-fit md:min-h-screen flex flex-col justify-between pt-24 pb-[40px] lg:pt-28 lg:pb-16 bg-[#F2EFE7] overflow-hidden select-none">
       {/* 1. Subtle Line-Art Botanical Drawings & Decorative Embroidery Background Motif */}
       <div className="absolute inset-0 pointer-events-none z-0 overflow-hidden opacity-25">
-        {/* Left Botanical Floral Line Art */}
+        {/* Left Botanical Floral Line Art (Mobile: Lower-Left Edge | Desktop: top-1/4 -left-12) */}
         <svg
-          className="absolute top-1/4 -left-12 w-[340px] md:w-[460px] h-auto text-[#666157]"
+          className="absolute top-[63%] -left-20 w-[210px] sm:w-[280px] md:top-1/4 md:-left-12 md:w-[460px] h-auto text-[#666157]"
           viewBox="0 0 400 500"
           fill="none"
           stroke="currentColor"
@@ -34,9 +34,9 @@ export default function Hero() {
           <path d="M 120 300 C 80 280, 60 220, 110 200 C 160 180, 170 240, 120 300 Z" opacity="0.6" />
         </svg>
 
-        {/* Right Botanical Floral Line Art */}
+        {/* Right Botanical Floral Line Art (Mobile: Upper-Right Above Jars | Desktop: top-1/3 -right-16) */}
         <svg
-          className="absolute top-1/3 -right-16 w-[360px] md:w-[480px] h-auto text-[#666157]"
+          className="absolute top-12 -right-10 w-[240px] sm:w-[300px] md:top-1/3 md:-right-16 md:w-[480px] h-auto text-[#666157]"
           viewBox="0 0 400 500"
           fill="none"
           stroke="currentColor"

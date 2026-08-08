@@ -50,7 +50,7 @@ export default function Hero() {
 
       {/* 2. Main Hero Content Container */}
       <div className="max-w-[1720px] mx-auto px-6 md:px-10 w-full my-4 md:my-auto z-10 flex flex-col justify-center md:min-h-[75vh]">
-        <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
+        <div className="relative flex flex-col lg:flex-row items-center justify-between gap-8 sm:gap-10 lg:gap-0">
           
           {/* LEFT OVERLAY TEXT */}
           <motion.div
@@ -65,29 +65,55 @@ export default function Hero() {
             </h1>
           </motion.div>
 
-          {/* CENTER PRODUCT IMAGE WITH EMBROIDERY MANDALA BACKDROP */}
+          {/* CENTER PRODUCT IMAGE WITH EMBROIDERY MANDALA & DIAGONAL FLORAL MOTIFS */}
           <motion.div
-            className="w-full lg:w-[70%] relative flex flex-col items-center justify-center my-4 lg:my-0 z-10 shrink-0 mx-auto text-center"
+            className="w-full lg:w-[70%] relative flex flex-col items-center justify-center my-8 sm:my-12 lg:my-0 z-10 shrink-0 mx-auto text-center"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
             <div className="relative w-full max-w-[1150px] mx-auto flex flex-col items-center justify-center">
               
-              {/* STAGE 1: Golden Embroidery Mandala Artwork (Fades in FIRST from 0s to 0.8s, stays stationary) */}
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 transform scale-100 sm:scale-110 lg:scale-125 opacity-[0.15] transition-transform duration-700">
+              {/* Golden Embroidery Mandala Artwork Backdrop */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0 transform scale-110 sm:scale-110 lg:scale-125 opacity-[0.12] transition-transform duration-700">
                 <EmbroideryMandala
                     size={480}
                     showBadge={false}
                 />
               </div>
 
-              {/* STAGE 2: Whole Jars Lineup Image (Appears with faster initial speed from center) */}
-              <div className="relative z-10 w-full flex flex-col items-center justify-center translate-y-2 md:translate-y-[50px]">
+              {/* Upper-Left Floral Accent (Framing Jars Top-Left) */}
+              <svg
+                className="absolute -top-6 -left-2 sm:-top-10 sm:-left-6 w-[140px] sm:w-[200px] lg:w-[250px] h-auto text-[#666157] opacity-35 pointer-events-none z-0 transform -rotate-12"
+                viewBox="0 0 200 200"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.2"
+              >
+                <path d="M 40 160 Q 90 100 160 40" strokeDasharray="3,3" />
+                <path d="M 90 100 C 60 70, 50 30, 85 20 C 120 10, 130 50, 90 100 Z" opacity="0.85" />
+                <path d="M 90 100 C 120 70, 160 85, 145 120 C 130 155, 90 135, 90 100 Z" opacity="0.85" />
+              </svg>
+
+              {/* Lower-Right Floral Accent (Framing Jars Bottom-Right) */}
+              <svg
+                className="absolute -bottom-4 -right-2 sm:-bottom-8 sm:-right-6 w-[140px] sm:w-[200px] lg:w-[250px] h-auto text-[#666157] opacity-35 pointer-events-none z-0 transform rotate-[-165deg] scale-x-[-1]"
+                viewBox="0 0 200 200"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="1.2"
+              >
+                <path d="M 40 160 Q 90 100 160 40" strokeDasharray="3,3" />
+                <path d="M 90 100 C 60 70, 50 30, 85 20 C 120 10, 130 50, 90 100 Z" opacity="0.85" />
+                <path d="M 90 100 C 120 70, 160 85, 145 120 C 130 155, 90 135, 90 100 Z" opacity="0.85" />
+              </svg>
+
+              {/* Whole Jars Lineup Image (Primary Focal Point - Larger on Mobile) */}
+              <div className="relative z-10 w-full flex flex-col items-center justify-center translate-y-1 md:translate-y-[50px]">
                 <motion.img
                   src="/pasco-hero.webp"
                   alt="Pasco Authentic Indian Marinade and Curry Pastes Range"
-                  className="w-full h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.18)] filter contrast-[1.02] saturate-[1.02] transform transition-transform duration-500 hover:scale-[1.02] mx-auto origin-center"
+                  className="w-full h-auto object-contain drop-shadow-[0_20px_35px_rgba(0,0,0,0.18)] filter contrast-[1.02] saturate-[1.02] transform transition-transform duration-500 hover:scale-[1.02] mx-auto origin-center scale-[1.08] sm:scale-100"
                   width={1150}
                   height={600}
                   loading="eager"

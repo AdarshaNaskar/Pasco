@@ -47,8 +47,8 @@ export default function Hero() {
       </div>
 
       {/* 2. Main Hero Content Container */}
-      <div className="max-w-[1720px] mx-auto px-6 md:px-10 w-full my-4 md:my-auto z-10 flex flex-col justify-center md:min-h-[75vh]">
-        <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0">
+      <div className="max-w-[1720px] mx-auto px-6 md:px-10 w-full my-auto z-10 flex flex-col justify-center flex-1 md:min-h-[75vh]">
+        <div className="relative flex flex-col lg:flex-row items-center justify-between gap-6 lg:gap-0 my-auto w-full">
           
           {/* LEFT OVERLAY TEXT */}
           <motion.div
@@ -57,10 +57,20 @@ export default function Hero() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-3xl sm:text-4xl lg:text-[38px] xl:text-[44px] font-serif font-extralight text-[#2B2927] leading-[1.12] tracking-tight">
+            <h1 className="text-3xl sm:text-4xl lg:text-[38px] xl:text-[44px] font-serif font-extralight text-[#2B2927] leading-[1.12] tracking-tight mb-3 sm:mb-4">
               Authentic Indian <br />
               <span className="font-serif italic font-normal text-[#7A1C38]">sauces &amp; pastes</span>
             </h1>
+
+            {/* Small Brand Highlights & Quality Badges */}
+            <div className="flex flex-wrap items-center gap-2 text-[11px] font-sans tracking-wide text-[#666157]">
+              <span className="inline-flex items-center gap-1 bg-[#7A1C38]/[0.08] text-[#7A1C38] px-2.5 py-1 rounded-full border border-[#7A1C38]/20 font-semibold uppercase text-[10px]">
+                <span>✦</span> 100% Real Ingredients
+              </span>
+              <span className="inline-flex items-center gap-1 bg-black/[0.04] text-[#4A463F] px-2.5 py-1 rounded-full border border-black/[0.08] font-medium uppercase text-[10px]">
+                Gluten Free
+              </span>
+            </div>
           </motion.div>
 
           {/* CENTER PRODUCT IMAGE WITH EMBROIDERY MANDALA BACKDROP */}
